@@ -19,7 +19,7 @@ Todoform.addEventListener('submit', (e) => {
     // here check the consition , User enter something or not yet.
     if (userInput.value == "") {
         // if not enter any data item ,then show a alert message.
-        alert("Sorry!, plaese fill something");
+        alert("SORRY! ,Please Fill Something First...");
     }
     // othewise , adding the User Input in the list Items container.
     else {
