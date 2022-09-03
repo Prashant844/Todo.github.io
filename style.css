@@ -65,9 +65,9 @@
     cursor: pointer;
     background-color: red;
     color: white;
-   }
-   
-   form button:hover {
+ }
+
+ form button:hover {
     color: black;
  }
 
@@ -108,11 +108,17 @@
     font-size: 1.5rem;
     padding: 0.5rem 1rem;
     width: 70%;
-    border: none;
     background-color: transparent;
     color: white;
     text-transform: uppercase;
+    border: none;
     font-weight: bold;
+   }
+   
+   .itembox ul .item > input:focus {
+      user-select:none;
+      border: none;
+      outline: none;
  }
 
  .itembox ul .item>.btns>button {
@@ -124,16 +130,19 @@
     border: none;
  }
 
- .itembox ul .item>.btns>.DONE , .btns>.REMOVE {
-   background-color: #18dcff;
-    color: white;
-   }
- .itembox ul .item>.btns>.DONE:hover {
-   background-color: rgb(40, 209, 40);
+ .itembox ul .item>.btns>.DONE,
+ .btns>.REMOVE {
+    background-color: #18dcff;
     color: white;
  }
-   .itembox ul .item>.btns>.REMOVE:hover{
-    background-color:red;
+
+ .itembox ul .item>.btns>.DONE:hover {
+    background-color: rgb(40, 209, 40);
+    color: white;
+ }
+
+ .itembox ul .item>.btns>.REMOVE:hover {
+    background-color: red;
     color: white;
  }
 
@@ -197,6 +206,10 @@
        color: white;
     }
 
+    .itembox ul .item>input:focus {
+       border: none;
+    }
+
     .itembox ul .item>.btns>button {
        padding: 0.5rem;
        font-size: 0.5rem;
@@ -207,7 +220,7 @@
 
  /* ⁡⁢⁣⁣​‌‌⁡⁢⁣⁢​‌‌‌**********𝗠𝗲𝗱𝗶𝗮 𝗤𝘂𝗲𝗿𝗶𝗲𝘀 𝗦𝗲𝗰𝘁𝗶𝗼𝗻-𝟮**********​⁡​⁡ */
 
-  @media (max-width:565px) {
+ @media (max-width:565px) {
     #Heading {
        font-size: 0.8cm;
        color: white;
@@ -269,11 +282,11 @@
        font-size: 1rem;
        font-weight: bolder;
     }
- } 
+ }
 
  /* ⁡⁢⁣⁣​‌‌‌**********𝗠𝗲𝗱𝗶𝗮 𝗤𝘂𝗲𝗿𝗶𝗲𝘀 𝗦𝗲𝗰𝘁𝗶𝗼𝗻-3**********​⁡ */
 
-  @media (max-width:767px) {
+ @media (max-width:767px) {
     #Heading {
        font-size: 0.8cm;
        color: white;
@@ -336,10 +349,10 @@
        font-weight: bolder;
     }
 
- } 
+ }
 
- /* ⁡⁣⁣⁢​‌‌‌**********𝗠𝗲𝗱𝗶𝗮 𝗤𝘂𝗲𝗿𝗶𝗲𝘀 𝗦𝗲𝗰𝘁𝗶𝗼𝗻-4**********​⁡ */
-  @media (max-width:992px) {
+ /* ⁡⁣⁢⁢​‌‌​‌‌‌⁡⁣⁢⁣**********𝗠𝗲𝗱𝗶𝗮 𝗤𝘂𝗲𝗿𝗶𝗲𝘀 𝗦𝗲𝗰𝘁𝗶𝗼𝗻-4**********⁡​​⁡⁡ */
+ @media (max-width:992px) {
     #Heading {
        font-size: 0.8cm;
        color: white;
@@ -389,6 +402,7 @@
        width: 100%;
        padding: 0.5rem;
     }
+
     .itembox ul .item>input {
        width: 65%;
        font-size: 1rem;
@@ -402,4 +416,5 @@
        font-size: 1rem;
        font-weight: bolder;
     }
- } 
+
+ }
